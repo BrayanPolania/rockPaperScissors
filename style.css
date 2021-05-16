@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+/* font-family: 'Barlow Semi Condensed';*/
+* {
+  font-family:'Barlow Semi Condensed';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* Radial Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%); */
+  background-image: radial-gradient(circle at top, #1f3756, #141539);
+  font-size: 1vw;
+}
+
+header {
+  width: 52vw;
+  height: 20vh;
+  margin: 6vh auto 8vh;
+  border: 0.25rem solid #606e85;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 1.25rem;
+}
+header div.title {
+  display: flex;
+  flex-direction: column;
+}
+header div.score {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 21%;
+  height: 75%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.25rem 0;
+}
+
+header div.score .txtScore {
+  color: hsl(229, 64%, 46%);
+}
+header div.score .numScore {
+  font-size:3.5rem;
+  color: hsl(229, 25%, 31%);
+}
