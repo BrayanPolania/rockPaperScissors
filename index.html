@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Rock, Paper, Scissors | Frontend Mentor</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <header name="banner">
+    <div class="title">
+      <img src="images/logo.svg">
+    </div>
+    <div class="score">
+      <p class="txtScore">SCORE</p>
+      <p class="numScore">12</p>
+    </div>
+  </header>
 
+  <main name="game">
+    <img src="images/bg-triangle.svg">
+    <div class="container2 paperAndScissors">
+      <button class="option paper">
+        <img src="images/icon-paper.svg">
+      </button>
+      <button class="option scissors">
+        <img src="images/icon-scissors.svg">
+      </button>
+    </div>
+    <div class="container2">
+      <button class="option rock">
+        <img src="images/icon-rock.svg">
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="rules">
+      <a href="#">RULES</a>
+    </div>
+  </footer>
+  
+  
+  <!--Score
+  Rules
+  You Picked
+  The House Picked
+  You Win
+  You Lose
+  Play Again-->
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">WolTe</a>.
   </div>
+  <div style="height:100vh;"></div>
   <script src="script.js"></script>
 </body>
 </html>
