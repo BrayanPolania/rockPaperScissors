@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Rock, Paper, Scissors | Frontend Mentor</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -23,19 +23,27 @@
   </header>
 
   <main name="game">
-    <img src="images/bg-triangle.svg">
-    <div class="container2 paperAndScissors">
-      <button class="option paper">
-        <img src="images/icon-paper.svg">
-      </button>
-      <button class="option scissors">
-        <img src="images/icon-scissors.svg">
-      </button>
+    <div class="triangle">
+      <img src="images/bg-triangle.svg">
     </div>
     <div class="container2">
-      <button class="option rock">
-        <img src="images/icon-rock.svg">
-      </button>
+      <div class="paper container3 paperAndScissors">
+        <button class="option">
+          <img src="images/icon-paper.svg">
+        </button>
+      </div>
+      <div class="scissors container3 paperAndScissors">
+        <button class="option">
+          <img src="images/icon-scissors.svg">
+        </button>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="rock container3 onlyRock">
+        <button class="option">
+          <img src="images/icon-rock.svg">
+        </button>
+      </div> 
     </div>
   </main>
 
@@ -59,7 +67,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">WolTe</a>.
   </div>
-  <div style="height:100vh;"></div>
   <script src="script.js"></script>
 </body>
 </html>

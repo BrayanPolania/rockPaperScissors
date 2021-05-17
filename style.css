@@ -39,11 +39,108 @@ header div.score {
   justify-content: space-around;
   padding: 1.25rem 0;
 }
-
 header div.score .txtScore {
   color: hsl(229, 64%, 46%);
 }
 header div.score .numScore {
   font-size:3.5rem;
   color: hsl(229, 25%, 31%);
+}
+
+main {
+  /* background-color:red; */
+  width: 70vw;
+  height: 57vh;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .triangle {
+  height: 80%;
+  position: absolute;
+  margin-top: 6.125rem;
+  z-index: 1;
+}
+main .container2 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+main .container3 {
+  width: 12.5rem;
+  height: 12.5rem;
+  padding: 1.4375rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 1s ease 0s;
+}
+main .container3:hover {
+  transform: scale(0.95);
+}
+main .paperAndScissors {
+  margin: 0 3.125rem ;
+}
+main .onlyRock {
+  margin-top: 1.6875rem;
+}
+main .option {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0 0.4375rem 0.0625rem #2a46c047;
+  border: none;
+  cursor: pointer;
+}
+main .paper {
+  background: linear-gradient(#4865f4, #5671f5);
+  box-shadow: inset 0 -0.4688rem 0.125rem #2643c5;
+}
+main .scissors {
+  background: linear-gradient(#ec9e0e, #eca922);
+  box-shadow: inset 0 -0.4688rem 0.125rem #c87019;
+}
+main .rock {
+  background: linear-gradient(#dc2e4e, #dd405d);
+  box-shadow: inset 0 -0.4688rem 0.125rem #9b1530;
+}
+main .option img {
+  width: 40%;
+}
+
+footer {
+  /* background-color: orange; */
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4vh;
+  margin-bottom: calc(4vh - 0.8125rem);
+}
+footer a {
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: all 1s ease 0s;
+}
+footer .rules {
+  border-radius: 0.625rem;
+  border: 0.125rem solid #606e85;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  cursor: pointer;
+  transition: all 1s ease 0s;
+}
+footer .rules:hover {
+  background-color: #fff;
+}
+footer .rules:hover a{
+  color: rgb(59, 67, 99);
 }
