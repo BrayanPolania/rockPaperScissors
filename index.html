@@ -9,7 +9,7 @@
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    </style>
 </head>
 <body>
   <header name="banner">
@@ -21,7 +21,7 @@
       <p class="numScore">12</p>
     </div>
   </header>
-
+  
   <main name="game">
     <div class="triangle">
       <img src="images/bg-triangle.svg">
@@ -46,27 +46,41 @@
       </div> 
     </div>
   </main>
-
+  
   <footer>
-    <div class="rules">
-      <a href="#">RULES</a>
-    </div>
+    <button id="btnRules" class="btnRules">
+      RULES
+    </button>
   </footer>
   
-  
-  <!--Score
-  Rules
-  You Picked
-  The House Picked
-  You Win
-  You Lose
-  Play Again-->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">WolTe</a>.
+  <div id="rules" class="containerRules">
+    <div class="rules">
+      <div class="top">
+        <h2>
+          RULES
+        </h2>
+        <button class="close" id="btnCloseRules">
+          <img src="images/icon-close.svg">
+        </button>
+      </div>
+      <div class="rulesOriginal rulesImgOriginal">
+        <img src="images/image-rules.svg">
+      </div>
+    </div>
   </div>
-  <script src="script.js"></script>
-</body>
-</html>
+  <!--Score
+    Rules
+    You Picked
+    The House Picked
+    You Win
+    You Lose
+    Play Again-->
+    
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">WolTe</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
