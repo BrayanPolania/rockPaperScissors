@@ -23,27 +23,55 @@
   </header>
   
   <main name="game">
-    <div class="triangle">
-      <img src="images/bg-triangle.svg">
-    </div>
-    <div class="container2">
-      <div class="paper container3 paperAndScissors">
-        <button class="option">
-          <img src="images/icon-paper.svg">
-        </button>
+    <div id="userPick" class="userPick">
+      <div class="triangle">
+        <img src="images/bg-triangle.svg">
       </div>
-      <div class="scissors container3 paperAndScissors">
-        <button class="option">
-          <img src="images/icon-scissors.svg">
-        </button>
+      <div class="container2">
+        <div class="paper container3 paperAndScissors">
+          <button id="btnPaper" class="option">
+            <img src="images/icon-paper.svg">
+          </button>
+        </div>
+        <div class="scissors container3 paperAndScissors">
+          <button id="btnScissors" class="option">
+            <img src="images/icon-scissors.svg">
+          </button>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="rock container3 onlyRock">
+          <button id="btnRock" class="option">
+            <img src="images/icon-rock.svg">
+          </button>
+        </div> 
       </div>
     </div>
-    <div class="container2">
-      <div class="rock container3 onlyRock">
-        <button class="option">
-          <img src="images/icon-rock.svg">
-        </button>
-      </div> 
+    <div id="displayPick" class="displayPick">
+      <div class="container50">
+        <div class="title">
+          <h2 class="title1">YOU PICKED</h2>
+        </div>
+        <div class="picked">
+          <div id="youPickedBorder" class="container3">
+            <button class="option">
+              <img id="youPickedImg">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container50">
+        <div class="title">
+          <h2 class="title2">THE HOUSE PICKED</h2>
+        </div>
+        <div class="picked">
+          <div id="housePickedBorder" class="container3">
+            <button id="housePickedBtn" class="option">
+              <img id="housePickedImg">
+            </buton>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   
@@ -69,8 +97,8 @@
     </div>
   </div>
   <!--Score
-    Rules
-    You Picked
+    Rules ✔
+    You Picked 
     The House Picked
     You Win
     You Lose
