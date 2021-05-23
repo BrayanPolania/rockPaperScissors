@@ -11,8 +11,8 @@ body {
   background-image: radial-gradient(circle at top, #1f3756, #141539);
   font-size: 1vw;
 }
-.container50 {
-  width: 50%;
+.container37 {
+  width: 37%;
 }
 
 header {
@@ -139,15 +139,15 @@ main .userPick .option img {
   width: 40%;
 } */
 
-
 main .displayPick {
     /* background-color: red; */
   display: none;
-  width: 74%;
+  width: 100%;
   height: 100%;
-  margin:0 auto;
+  justify-content: center;
+  /* margin:0 auto; */
 }
-main .displayPick .container50 {
+main .displayPick .container37 {
   height: 100%;
 }
 main .displayPick .title {
@@ -157,7 +157,7 @@ main .displayPick .title {
   justify-content: center;
   align-items: center;
 }
-main .displayPick h2 {
+main .displayPick .title h2 {
   font-size: 1.8rem;
   color:  #fff;
 }
@@ -176,6 +176,35 @@ main .displayPick .option {
   cursor: default;
 }
 
+main .result {
+    /* background: #00ff00; */
+  width: 26%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1.25rem;
+}
+main .result h2 {
+  width: 100%;
+  font-size:3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+main .result .playAgain {
+  margin-top: 0.9375rem;
+  width: 80%;
+  text-transform: uppercase;
+  color: #3b4363;
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 2.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
 
 footer {
   /* background-color: orange; */
