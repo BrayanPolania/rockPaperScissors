@@ -40,6 +40,8 @@ btnScissors.addEventListener("click", pickScissors);
 btnRock.addEventListener("click", pickRock);
 
 function pick (option) {
+    youPickedBorder.classList.remove (`paper`, `scissors`, `rock`);
+    youPickedImg.src = ``;
   userPick.style.display = "none";
   displayPick.style.display = "flex";
   youPickedBorder.classList.add (`${option}`);
@@ -62,6 +64,8 @@ function pickRock () {
 function pickHome (option) {
   optionHome = option;
   console.log(optionHome);
+    housePickedBorder.classList.remove (`paper`, `scissors`, `rock`);
+    housePickedImg.src = ``;
   setTimeout(function () {
     housePickedBtn.style.backgroundColor = "#fff";
     housePickedBtn.style.boxShadow = "inset 0 0.4375rem 0.0625rem #2a46c047";
@@ -117,7 +121,15 @@ function winner () {
     }, 2000);
   }
 }
+//PLAY AGAIN
+const playAgain = document.getElementById("playAgain");
 
+playAgain.addEventListener("click", restart);
+
+function restart() {
+  displayPick.style.display = "none";
+  userPick.style.display = "flex";
+}
 
 
 
