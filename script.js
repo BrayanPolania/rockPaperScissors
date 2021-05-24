@@ -1,3 +1,23 @@
+//SCORE
+const txtScore = document.getElementById("txtScore");
+let score = 0;
+
+
+function saveScore() {
+  localStorage.setItem("Score", score);
+  txtScore.innerText = score;
+}
+
+if (localStorage.getItem("Score")) {
+  score = localStorage.getItem("Score");
+  txtScore.innerText = score;
+}
+
+
+
+
+
+
 
 //RULES
 const btnRules = document.getElementById("btnRules");
@@ -42,6 +62,7 @@ btnRock.addEventListener("click", pickRock);
 function pick (option) {
     youPickedBorder.classList.remove (`paper`, `scissors`, `rock`);
     youPickedImg.src = ``;
+    result.style.display = "none";
   userPick.style.display = "none";
   displayPick.style.display = "flex";
   youPickedBorder.classList.add (`${option}`);
@@ -91,9 +112,6 @@ function housePick () {
 }
 
 //PLAY AGAIN
-// setTimeout(function(){
-//   result.style.display = "flex";
-// }, 1000);
 function winner () {
   if (optionUser === optionHome) {
     console.log("it's a tie");
@@ -110,6 +128,8 @@ function winner () {
     console.log("you win");
     win.innerText = "you win";
     setTimeout(function(){
+      score++;
+      saveScore();
       result.style.display = "flex";
     }, 2000);
   }
@@ -117,6 +137,8 @@ function winner () {
     console.log("you lost");
     win.innerText = "you lost";
     setTimeout(function(){
+      score--;
+      saveScore();
       result.style.display = "flex";
     }, 2000);
   }
@@ -135,8 +157,6 @@ function restart() {
 
 
 
-
-  
   //FUNCTIONS
   function numAleatorio(min, max) {
     return Math.round(Math.random() * (max - min) + min);
