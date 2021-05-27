@@ -279,3 +279,98 @@ div.containerRules .rulesImgOriginal {
   padding: 0 8.75% ;
 }
 
+
+/*MOBILE*/
+
+@media (max-width: 430px) {
+  header {
+    width: 84%;
+    height: 13vh;
+    margin: 4vh auto 13vh;
+    font-size: 1vh;
+  }
+  header div.score {
+    width: 25%;
+  }
+  header div.score .txtScore {
+    font-size: 0.7rem;
+    margin-top: 8px;
+  }
+  header div.score .numScore{
+    font-size: 2.5rem;
+  }
+  header div.title {
+    transform: scale(0.5) translateX(-5.3125rem);
+  }
+
+  main {
+    width: 100%;
+    height: 57vh;
+  }
+
+  main .userPick {
+    width: 84%;
+    margin: 0 auto;
+    transform: translateY(-12.5%);
+  }
+  main .userPick .triangle {
+    transform: scale(0.8);
+    margin-top: 4rem;
+  }
+  main .userPick .container2 {
+    transform: scale(0.5);
+    width: 200%;
+  }
+  main .userPick .onlyRock {
+    margin-top: -0.3125rem;
+  }
+  main .userPick .paperAndScissors {
+    margin: 0;
+  }
+  main .userPick #paperAndScissors {
+    justify-content: space-between;
+  }
+  
+  main .displayPick {
+    flex-wrap: wrap;
+  }
+  main .displayPick .container37 {
+    transform: scale(0.5) translateY(-11.9375rem);
+    width: 50%;
+    text-align: center;
+    /* height: 50%; */
+  }
+  main .displayPick .result {
+    order: 3;
+    width: 100%;
+    transform: translateY(-12.5rem);
+    height: 35%;
+  }
+
+  
+  footer {
+    width: 100%;
+    height: 6vh;
+    justify-content: center;
+    margin-bottom: calc(7vh - 0.8125rem);
+    padding: 0;
+  }
+
+  div.containerRules .rules{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 29%;
+  }
+  div.containerRules .rules .top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  div.containerRules .rules .top .close {
+    position: absolute;
+    top: 89%;
+  }
+}
